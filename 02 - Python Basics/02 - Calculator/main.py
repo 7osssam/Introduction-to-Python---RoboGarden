@@ -1,7 +1,7 @@
 
 def calculator() -> None:
-	num1 = input("Enter the first number: ")
-	num2 = input("Enter the second number: ")
+	num1 = int(input("Enter the first number: "))
+	num2 = int(input("Enter the second number: "))
 	operator = input("Enter the operator (+, -, *, /): ")
 
 	if not num1.isdigit() or not num2.isdigit():
@@ -11,9 +11,6 @@ def calculator() -> None:
 	if operator not in ["+", "-", "*", "/"]:
 		print("Please enter a valid operator")
 		return
-
-	num1 = int(num1)
-	num2 = int(num2)
 
 	if operator == "+":
 		result = num1 + num2
