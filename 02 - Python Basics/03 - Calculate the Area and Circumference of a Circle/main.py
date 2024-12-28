@@ -1,6 +1,6 @@
 
 radius = input( "Enter the radius of the circle: " ) 
-if( radius.isnumeric() == False ):
+if( radius.isnumeric() == False  and radius < 0 ):
 	print( "Please enter a valid number" )
 	exit()
 
